@@ -13,7 +13,7 @@ class UserCreatorTest {
   public void deserialize() throws IOException {
 //Only this test case because I just want to prove a point
     ObjectMapper objectMapper = new ObjectMapper();
-    String json = "{\"name\":\"first\",\"lastName\":\"Last\",\"age\":12,\"workPlace\":{\"name\":\"work Place\",\"address\":\"Address\"}}";
+    String json = "{\"name\":\"first\",\"surname\":\"Last\",\"age\":12,\"workPlace\":{\"name\":\"work Place\",\"address\":\"Address\"}}";
     User actual = objectMapper.readValue(json, User.class);
     objectMapper.writeValueAsString(actual);
   }
