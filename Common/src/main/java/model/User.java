@@ -2,7 +2,7 @@ package model;
 
 public class User {
   public String name;
-  public String lastName;
+  public String surname;
   public int age;
   public WorkPlace workPlace;
 
@@ -10,7 +10,7 @@ public class User {
   public String toString() {
     return "User{" +
         "name='" + name + '\'' +
-        ", lastName='" + lastName + '\'' +
+        ", surname='" + surname + '\'' +
         ", age=" + age +
         ", workPlace=" + workPlace +
         '}';
